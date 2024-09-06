@@ -14,6 +14,36 @@
     z-index: 99;
 }
 
+h1 {
+    font-size: 25px; /* Adjust this value based on your needs */
+}
+
+/* Default Flexbox for Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Flexbox adjustments for screens smaller than 300px */
+@media (max-width: 350px) {
+    .navbar-brand h1 {
+        font-size: 16px;  /* Smaller font size for smaller screens */
+    }
+    #navbar-logo {
+        width: 50px;  /* Smaller logo size for smaller screens */
+    }
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
+
+
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
